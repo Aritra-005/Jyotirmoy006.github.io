@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,191 +5,67 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea, #4dd0e1);
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: linear-gradient(135deg, #E6E6FA, #B0E0E6); /* Background gradient */
 }
 
-/* Header */
 header {
-    background: linear-gradient(135deg, #007acc, #004d66);
+    background: #0047AB; /* Header background color */
     color: #fff;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
 }
 
-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    letter-spacing: 1.5px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-header p {
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-/* Navigation Bar */
 nav ul {
-    background-color: #004d66;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
-nav ul li a {
+nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 25px;
-    background-color: #007acc;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-    perspective: 1000px; /* Added for 3D effect */
 }
 
-nav ul li a:hover {
-    background-color: #002a40;
-    transform: scale(1.1) rotateY(5deg); /* Added rotation for 3D effect */
-    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+h1 {
+    margin-bottom: 10px;
 }
 
-/* Profile Picture */
-.profile-pic {
-    display: block;
-    margin: 30px auto;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    border: 5px solid #007acc;
-    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    perspective: 1000px; /* Added for 3D effect */
+h2 {
+    background: linear-gradient(135deg, #FF7F50, #FF6347); /* Section heading gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.profile-pic:hover {
-    transform: rotateY(20deg) scale(1.1); /* Added rotation for 3D effect */
-    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-/* Container - Default Shadow */
-.container {
-    width: 85%;
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Added for 3D effect */
+section:hover {
+    transform: translateY(-5px);
 }
 
-.container:hover {
-    transform: translateY(-10px) scale(1.02); /* Added lift effect on hover */
-}
-
-/* Home Section */
-#home {
-    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
-    color: #fff;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* About Section */
-#about {
-    background: linear-gradient(135deg, #fc466b, #3f5efb);
-    color: #fff;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Educational Background Section */
-#education {
-    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
-    color: #333;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Experience Section */
-#experience {
-    background: linear-gradient(135deg, #c6ffdd, #fbd786, #f7797d);
-    color: #333;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Projects Section */
-#projects {
-    background: linear-gradient(135deg, #36d1dc, #5b86e5);
-    color: #fff;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Courses Section */
-#courses {
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
-    color: #333;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Contact Section */
-#contact {
-    background: linear-gradient(135deg, #a8ff78, #78ffd6);
-    color: #333;
-    transform: perspective(1000px) translateZ(10px); /* Added 3D effect */
-}
-
-/* Section Titles */
-.container h2 {
-    font-size: 2.5em;
-    color: #fff;
-    margin-bottom: 25px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 10px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
 footer {
-    background-color: #004d66;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    padding: 10px 0;
+    background: #0047AB; /* Footer background color */
+    color: #fff;
 }
 
-footer p {
-    margin: 0;
-    font-size: 1.2em;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        margin: 0 10px;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .container {
-        width: 95%;
-    }
+p {
+    margin-bottom: 10px;
 }
+
